@@ -1,0 +1,117 @@
+<div class="Head">
+    <div class="wrap-content d-flex justify-content-between align-items-center">
+        <div class="logo-head">
+            <a href="">
+                <img src="" alt="logo" title="logo">
+            </a>
+        </div>
+        <div class="right-head">
+            <div class="head-top">
+                <div class="user-head">
+                    <a href="">
+                        <span>LOGIN</span>
+                    </a>
+                </div>
+                <div class="search-head">
+                    <!-- Search input -->
+                    <input type="text" placeholder="Tìm kiếm...">
+                </div>
+                <a href="">Giỏ Hàng</a>
+            </div>
+            <div class="menu d-flex justify-content-between align-items-center">
+                <ul class="menu-main">
+                    <li>
+                        <a routerLink="/product">SẢN PHẨM MỚI </a>
+                        <ul *ngFor="let categorys of ListCategory">
+                            <li><a (click)="GetProductByCategory(categorys.Id)">{{categorys.Name}}</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">SẢN PHẨM GIẢM GIÁ</a>
+                        <ul>
+                            <li><a href="">Sản Phẩm Sale 70%</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">BỘ SƯU TẬP </a></li>
+                    <li><a href="#">Tuyển Dụng</a></li>
+                    <li><a href="#">CHÍNH SÁCH </a></li>
+                    <li><a href="#">HỆ THỐNG CỬA HÀNG </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-4">
+    <div class="row">
+        <!-- Category bên trái -->
+        <div class="col-md-2">
+            <div class="category-container">
+                <h3 class="category-title">CATEGORY</h3>
+                <ul class="category-list">
+                    <!-- Sản phẩm mới -->
+                    <li class="category-item">
+                        <div class="category-header" (click)="toggleCategory('newProducts')" >
+                            <a routerLink="/product"><span>SẢN PHẨM MỚI</span></a>
+                            <a><span class="toggle-icon">+</span></a>
+                        </div>
+                        <ul class="subcategory-list" *ngIf="showNewProducts">
+                            <li *ngFor="let category of ListCategory">
+                                <a (click)="GetProductByCategory(category.Id)">{{category.Name}}</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <hr>
+                    <!-- Sale -->
+                    <li class="category-item">
+                        <div class="category-header" (click)="toggleCategory('sale')">
+                            <a routerLink="/product"><span>SALE OFF TO 70%</span></a>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <ul class="subcategory-list" *ngIf="showSale">
+                            <li>Giày thể thao</li>
+                            <li>Túi xách</li>
+                            <li>Phụ kiện</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Danh sách sản phẩm bên phải -->
+        <div class="col-md-10">
+            <h3 class="fw-bold title-product">SẢN PHẨM MỚI</h3>
+            <div class="d-flex justify-content-end">
+                <select id="basic" class="selectpicker form-control" [(ngModel)]="selectSort" (change)="SortProduct()">
+                    <option value="1">Mặc định</option>
+                    <option value="2">Mới nhất</option>
+                    <option value="3">Cũ nhất</option>
+                    <option value="4">Giá tăng dần</option>
+                    <option value="5">Giá giảm dần</option>
+                </select>
+            </div>
+            <div class="row">
+                <div class="col-md-4 product-card" *ngFor="let product of ListProduct">
+                    <div class="card">
+                        <a [routerLink]="['/product', product.Id]">
+                            <img *ngIf="product.Images.length > 0" src="{{product.Images[0].Link}}" class="card-img-top" alt="{{product.Images.Name}}">
+                        </a>
+                        <div class="card-body">
+                            <a [routerLink]="['/product', product.Id]">
+                                <h5 class="card-title">{{ product.Name }}</h5>
+                            </a>
+                            <p class="card-text fw-bold text-danger">{{product.Price | currency }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Điều hướng phân trang -->
+        <div class="pagination">
+            <button (click)="prevPage()" [disabled]="pageNumber === 1">Trang trước</button>
+            <span>Trang {{ pageNumber }} / {{ totalPages }}</span>
+            <button (click)="nextPage()" [disabled]="pageNumber === totalPages">Trang sau</button>
+        </div>
+    </div>
+</div>

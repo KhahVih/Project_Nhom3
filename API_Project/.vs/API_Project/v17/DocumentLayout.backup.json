@@ -1,7 +1,32 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Du_An_TT_CubeTech\\Project_Nhom_3\\API_Project\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{88FEB661-BA19-4778-A840-8513A3D5822A}|API_Project\\API_Project.csproj|c:\\du_an_tt_cubetech\\project_nhom_3\\api_project\\api_project\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88FEB661-BA19-4778-A840-8513A3D5822A}|API_Project\\API_Project.csproj|solutionrelative:api_project\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88FEB661-BA19-4778-A840-8513A3D5822A}|API_Project\\API_Project.csproj|c:\\du_an_tt_cubetech\\project_nhom_3\\api_project\\api_project\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88FEB661-BA19-4778-A840-8513A3D5822A}|API_Project\\API_Project.csproj|solutionrelative:api_project\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88FEB661-BA19-4778-A840-8513A3D5822A}|API_Project\\API_Project.csproj|c:\\du_an_tt_cubetech\\project_nhom_3\\api_project\\api_project\\controllers\\imagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88FEB661-BA19-4778-A840-8513A3D5822A}|API_Project\\API_Project.csproj|solutionrelative:api_project\\controllers\\imagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88FEB661-BA19-4778-A840-8513A3D5822A}|API_Project\\API_Project.csproj|c:\\du_an_tt_cubetech\\project_nhom_3\\api_project\\api_project\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88FEB661-BA19-4778-A840-8513A3D5822A}|API_Project\\API_Project.csproj|solutionrelative:api_project\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88FEB661-BA19-4778-A840-8513A3D5822A}|API_Project\\API_Project.csproj|c:\\du_an_tt_cubetech\\project_nhom_3\\api_project\\api_project\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88FEB661-BA19-4778-A840-8513A3D5822A}|API_Project\\API_Project.csproj|solutionrelative:api_project\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88FEB661-BA19-4778-A840-8513A3D5822A}|API_Project\\API_Project.csproj|c:\\du_an_tt_cubetech\\project_nhom_3\\api_project\\api_project\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88FEB661-BA19-4778-A840-8513A3D5822A}|API_Project\\API_Project.csproj|solutionrelative:api_project\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +34,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Du_An_TT_CubeTech\\Project_Nhom_3\\API_Project\\API_Project\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "API_Project\\Models\\Product.cs",
+              "ToolTip": "C:\\Du_An_TT_CubeTech\\Project_Nhom_3\\API_Project\\API_Project\\Models\\Product.cs",
+              "RelativeToolTip": "API_Project\\Models\\Product.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAywB4AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T02:15:33.091Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ImageController.cs",
+              "DocumentMoniker": "C:\\Du_An_TT_CubeTech\\Project_Nhom_3\\API_Project\\API_Project\\Controllers\\ImageController.cs",
+              "RelativeDocumentMoniker": "API_Project\\Controllers\\ImageController.cs",
+              "ToolTip": "C:\\Du_An_TT_CubeTech\\Project_Nhom_3\\API_Project\\API_Project\\Controllers\\ImageController.cs",
+              "RelativeToolTip": "API_Project\\Controllers\\ImageController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T09:02:02.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Du_An_TT_CubeTech\\Project_Nhom_3\\API_Project\\API_Project\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "API_Project\\Models\\Category.cs",
+              "ToolTip": "C:\\Du_An_TT_CubeTech\\Project_Nhom_3\\API_Project\\API_Project\\Models\\Category.cs",
+              "RelativeToolTip": "API_Project\\Models\\Category.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T07:32:05.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Du_An_TT_CubeTech\\Project_Nhom_3\\API_Project\\API_Project\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "API_Project\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Du_An_TT_CubeTech\\Project_Nhom_3\\API_Project\\API_Project\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "API_Project\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAABYAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T07:29:52.647Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Du_An_TT_CubeTech\\Project_Nhom_3\\API_Project\\API_Project\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "API_Project\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Du_An_TT_CubeTech\\Project_Nhom_3\\API_Project\\API_Project\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "API_Project\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAkwCoAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T07:01:31.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Du_An_TT_CubeTech\\Project_Nhom_3\\API_Project\\API_Project\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "API_Project\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Du_An_TT_CubeTech\\Project_Nhom_3\\API_Project\\API_Project\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "API_Project\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAACQBAAAAAAAAAAAqwCABAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T04:07:29.437Z",
+              "EditorCaption": ""
             }
           ]
         }
