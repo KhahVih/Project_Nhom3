@@ -1,0 +1,43 @@
+<h1 class="page-title">LIÊN HỆ</h1>
+
+<div class="container">
+  <div class="showroom-info">
+    <h2>SHOWROOM</h2>
+    <h3>HỆ THỐNG CỬA HÀNG CHAMY GABY</h3>
+    
+    <div class="location-group">
+      <h4>- Hà Nội</h4>
+      <p>CS1: 172 Cầu Giấy, Hà Nội - Hotline: 0984.183.066</p>
+      <p>CS2: 340 Nguyễn Trãi - Trung Văn - Nam Từ Liêm - Hà Nội</p>
+      <p>CS3: 106 B4, Phạm Ngọc Thạch, Đống Đa, Hà Nội</p>
+    </div>
+
+    <div class="location-group">
+      <h4>- Hồ Chí Minh</h4>
+      <p>CS3: 124 Nguyễn Trãi, P.3, Q.5, TP Hồ Chí Minh - Hotline: <span class="hotline">0365 543 919</span></p>
+      <p>CS4:</p>
+      <p>524 Lê Văn Sỹ, Quận 3, TP. HCM</p>
+    </div>
+  </div>
+
+  <div class="contact-form">
+    <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm.value)">
+      <div class="form-row">
+        <input type="text" name="fullName" ngModel placeholder="Họ tên" required>
+        <input type="tel" name="phone" ngModel placeholder="Điện thoại" required>
+      </div>
+      <div class="form-row">
+        <input type="text" name="address" ngModel placeholder="Địa chỉ">
+        <input type="email" name="email" ngModel placeholder="Email" required>
+      </div>
+      <input type="text" name="subject" ngModel placeholder="Chủ đề" required>
+      <textarea name="content" ngModel placeholder="Nội dung" required></textarea>
+      <!-- ... rest of the HTML remains the same ... -->
+  <div class="button-group">
+      <button type="submit" [disabled]="!contactForm.valid" class="btn-primary">Gửi</button>
+      <button type="reset" class="btn-secondary">Nhập lại</button>
+  </div>
+<!-- ... rest of the HTML remains the same ... -->
+    </form>
+  </div>
+</div>
